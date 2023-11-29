@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import Planets from '../components/Planets.vue';
+import PlanetsList from '@/components/planets/PlanetsList.vue';
 </script>
 
 <template>
-  <main>
-    <Planets />
-  </main>
+  <PlanetsList />
 </template>

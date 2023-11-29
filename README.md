@@ -3,10 +3,13 @@
 This is a simple assessment project for QuBeyond which I´m building as a candidate.
 
 - Vue3 + Vite + TypeScript + Vitest
+- The sorting logic in this case is responsability of the parent component, which is arguable but since it is a demo project it can be refactored to pass the responsability to table itself if needed
 - No state management library such as Pinia or Vuex is being used at this point due to the simplicity of the project
+- No components library used such as Vuetify, Bootstrap Vue, Prime Vue, Antd but I worked with all them in the past (this is simulating a tiny in-house design system, of course spacing system, structured font sizes and branding color with tints and shades can be added too but I tried to keep it simple)
 - Sass used as a Css pre-processor with a simplified version of 7-1 architecture
 - The structure of the project's folder is simple but it´s flexible and scalable
 - Low test coverage just to show some test cases
+- Some of the items are returning URL's to get the related field data, I´m not fetching this data simply cause I disagree with the fact of trigger an API call for each detail, the original endpoint should concanate the needed data in the original response.
 
 ## Recommended IDE Setup
 

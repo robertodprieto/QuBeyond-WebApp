@@ -1,0 +1,70 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-black: #181818;
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-grey-1: #ccc;
+  --vt-c-text-grey-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-grey-3: #777;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-text: var(--vt-c-text-light-1);
+  --color-text__disabled: var(--vt-c-text-grey-3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-text: var(--vt-c-text-grey-2);
+    --color-text__disabled: var(--vt-c-text-grey-1);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 1.6rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+button {
+  color: var(--color-text);
+  &:disabled {
+    color: var(--color-text__disabled);
+  }
+}
